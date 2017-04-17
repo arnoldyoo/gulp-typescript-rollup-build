@@ -28,10 +28,11 @@ gulp.task('tscompile', () => {
     ])
 });
 
-// make umd build task
-gulp.task('umd-build',['tscompile'], () => {
+//  build task
+gulp.task('build',['tscompile'], () => {
     return rollup({
         entry: buildInfo.rollupEntryFile,
+        treeshake: true,
         plugins: [
                 resolve({
                     jsnext: true,
@@ -50,4 +51,4 @@ gulp.task('umd-build',['tscompile'], () => {
     });
 })
 
-gulp.task('default', [ 'clean', 'umd-build' ]);
+gulp.task('default', [ 'clean', 'build' ]);
