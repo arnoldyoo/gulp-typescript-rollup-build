@@ -11,7 +11,7 @@ var commonjs = require('rollup-plugin-commonjs');
 var resolve = require('rollup-plugin-node-resolve');
 var uglify = require('rollup-plugin-uglify');
 
-var buildInfo = require('./build.json');
+var buildInfo = require('./buildinfo.json');
 
 // remove dist folder task
 gulp.task('clean', (cb) => {
