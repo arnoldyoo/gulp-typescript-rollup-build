@@ -2,5 +2,6 @@
     "dest" : "dist",
     "rollupEntryFile" : "dist/index.js",
     "rollupDestFile" : "dist/bundles/index.umd.js",
+    "rollupFormat" : "umd",
     "moduleName" : "index"
 }

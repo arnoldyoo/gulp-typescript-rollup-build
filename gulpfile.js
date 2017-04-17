@@ -43,7 +43,7 @@ gulp.task('umd-build',['tscompile'], () => {
         ]
     }).then((bundle) => {
         return bundle.write({
-            format: 'umd',
+            format: buildInfo.rollupFormat,
             moduleName: buildInfo.moduleName,
             dest: buildInfo.rollupDestFile
         });
