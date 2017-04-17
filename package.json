@@ -1,0 +1,29 @@
+{
+  "name": "gulp-typescript-rollup-build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rollup.config.js",
+  "scripts": {
+    "build": "gulp",
+    "build_prod": "gulp --production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp-mode": "^1.0.1",
+    "gulp-typescript": "^3.1.6",
+    "merge2": "^1.0.3",
+    "rimraf": "^2.5.4",
+    "rollup": "^0.37.0",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-uglify": "^1.0.1",
+    "typescript": "^2.1.6",
+    "uglify-js": "^2.7.5"
+  }
+}
