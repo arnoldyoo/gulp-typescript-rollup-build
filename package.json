@@ -4,8 +4,8 @@
   "description": "",
   "main": "rollup.config.js",
   "scripts": {
-    "build": "gulp",
-    "build_prod": "gulp --production"
+    "build.dev": "gulp",
+    "build.prod": "gulp build.prod --color"
   },
   "keywords": [],
   "author": "",
@@ -14,12 +14,13 @@
   "devDependencies": {
     "del": "^2.2.2",
     "gulp": "^3.9.1",
-    "gulp-mode": "^1.0.1",
+    "gulp-inline-ng2-template": "^4.0.0",
+    "gulp-sass": "^3.1.0",
     "gulp-typescript": "^3.1.6",
     "merge2": "^1.0.3",
-    "rimraf": "^2.5.4",
     "rollup": "^0.37.0",
     "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-ignore": "^1.0.3",
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-uglify": "^1.0.1",
     "typescript": "^2.1.6",
